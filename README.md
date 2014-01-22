@@ -12,7 +12,8 @@ RCTextView is subclass of UITextView which has placeholder, it will work same as
 ##Usage
 
 ```
-RCTextView *textView = [[RCTextView alloc]initWithFrame:CGRectMake(10, 50, 300, 200) placeholder:@"It is a UITextView with placeholder"];
+RCTextView *textView = [[RCTextView alloc] initWithFrame:CGRectMake(10, 50, 300, 200) 
+					     placeholder:@"It is a UITextView with placeholder"];
     // Can use your own color for the placeholder
 	// textView.placeholderColor = [UIColor myColor];
     [self.view addSubview:textView];
