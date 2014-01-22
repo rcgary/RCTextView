@@ -85,4 +85,10 @@ static UIEdgeInsets _padding;
     [super drawRect:rect];
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UITextViewTextDidChangeNotification
+                                                  object:nil];
+}
 @end
